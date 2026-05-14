@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation — Luxe Car Rental</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Style.css/res.css">
+</head>
+<body>
+
+<div class="booking-wrapper">
+
+    <a class="back-link" href="catalogue.html">← Retour au catalogue</a>
+
+    <div class="booking-container">
+
+        <div class="booking-header">
+            <span class="label-voiture" id="label-voiture">Véhicule sélectionné</span>
+            <h2>Réserver la <span class="modele-nom" id="nom-modele">voiture</span></h2>
+            <p id="sous-titre">Remplissez le formulaire pour confirmer votre réservation.</p>
+        </div>
+
+        <form class="booking-form" id="form-reservation" novalidate>
+
+            <div class="section-label">Lieu &amp; Dates</div>
+
+            <div class="input-group">
+                <label for="location">Lieu de prise en charge</label>
+                <input type="text" id="location" name="location"
+                       placeholder="Aéroport, ville ou agence" required>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="pickup-date">Date de départ</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="pickup-time">Heure de départ</label>
+                    <input type="time" id="pickup-time" name="pickup-time" required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label for="return-date">Date de retour</label>
+                    <input type="date" id="return-date" name="return-date" required>
+                </div>
+                <div class="input-group">
+                    <label for="return-time">Heure de retour</label>
+                    <input type="time" id="return-time" name="return-time" required>
+                </div>
+            </div>
+
+            <div class="section-label">Catégorie</div>
+
+            <div class="input-group">
+                <label for="car-category">Catégorie de véhicule</label>
+                <div class="select-wrapper">
+                    <select id="car-category" name="car-category">
+                        <option value="eco">Économique — Citadine</option>
+                        <option value="suv">SUV / Break</option>
+                        <option value="luxury">Luxe / Sport</option>
+                        <option value="moto">Moto / Scooter</option>
+                        <option value="util">Utilitaire</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section-label">Options</div>
+
+            <div class="options-group">
+                <label class="option-item">
+                    <input type="checkbox" name="insurance" id="opt-assurance">
+                    <div class="option-text">
+                        <span>Protection complète</span>
+                        <small>Couverture tous risques incluse</small>
+                    </div>
+                    <span class="option-prix">+700 DA/jour</span>
+                </label>
+                <label class="option-item">
+                    <input type="checkbox" name="chauffeur" id="opt-chauffeur">
+                    <div class="option-text">
+                        <span>Chauffeur privé</span>
+                        <small>Disponible 24h/24</small>
+                    </div>
+                    <span class="option-prix">+3000 DA/jour</span>
+                </label>
+            </div>
+
+            <div class="recap-prix" id="recap">
+                <div class="recap-ligne">
+                    <span id="recap-label">Location (1 jour)</span>
+                    <span id="recap-base">—</span>
+                </div>
+                <div class="recap-ligne" id="recap-assurance-ligne">
+                    <span>Protection complète</span>
+                    <span id="recap-assurance">—</span>
+                </div>
+                <div class="recap-ligne" id="recap-chauffeur-ligne">
+                    <span>Chauffeur privé</span>
+                    <span id="recap-chauffeur">—</span>
+                </div>
+                <div class="recap-ligne total">
+                    <span>Total estimé</span>
+                    <span class="montant" id="recap-total">—</span>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Confirmer la réservation</button>
+
+            <div class="msg-succes" id="msg-succes">
+                <strong>✓ Demande envoyée avec succès !</strong>
+                Notre équipe vous contactera dans les plus brefs délais.
+            </div>
+
+            <p class="contact-note">
+                Des questions ? <a href="tel:+21376789876">Appelez-nous</a> ou
+                <a href="https://wa.me/213552545656" target="_blank">WhatsApp</a>
+            </p>
+
+        </form>
+    </div>
+</div>
+
+
+<script src="../javascript/res.js"></script>
+
+</body>
+</html>
