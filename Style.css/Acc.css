@@ -1,0 +1,74 @@
+section:first-of-type {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+section:first-of-type h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+section:first-of-type p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+section:first-of-type a {
+    display: inline-block;
+    background: #3498db;
+    color: #fff;
+    padding: 15px 35px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+section:first-of-type a:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+section:last-of-type {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+section:last-of-type h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+section:last-of-type > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+section:last-of-type article {
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 4px solid #3498db;
+    transition: transform 0.3s ease;
+}
+
+section:last-of-type article:hover {
+    transform: translateY(-10px);
+}
+
+section:last-of-type article h3 {
+    color: #3498db;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
